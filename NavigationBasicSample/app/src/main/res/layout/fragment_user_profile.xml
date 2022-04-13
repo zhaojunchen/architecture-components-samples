@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2018 The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -25,6 +24,14 @@
     tools:context="com.example.android.navigationsample.UserProfile"
     tools:layout_editor_absoluteY="81dp">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:textColor="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <!-- TODO: Update blank fragment layout -->
 
     <ImageView
@@ -34,34 +41,34 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="8dp"
+        android:background="@drawable/avatar_6_raster"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/avatar_6_raster"
         app:srcCompat="@drawable/purple_frame"
         tools:background="@tools:sample/avatars[6]"
         tools:src="@drawable/purple_frame" />
 
     <View
-            android:id="@+id/view2"
-            android:layout_width="0dp"
-            android:layout_height="141dp"
-            android:layout_marginTop="64dp"
-            android:background="@drawable/rounded_rect"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView7"
-            app:layout_constraintVertical_bias="1.0"/>
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/rounded_rect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/profile_user_name"
-        android:gravity="center_horizontal"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
         android:text="@string/profile_name_1"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
@@ -76,12 +83,12 @@
         android:layout_width="0dp"
         android:layout_height="120dp"
         android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginRight="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_user_name"/>
+        app:layout_constraintTop_toBottomOf="@+id/profile_user_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
